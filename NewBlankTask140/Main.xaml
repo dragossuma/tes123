@@ -67,7 +67,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <umab:ExchangeApplicationCard ApplicationId="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" SharedMailbox="{x:Null}" TenantId="{x:Null}" Account="Please select an account" DisplayName="Use Outlook 365" sap:VirtualizedContainerService.HintSize="412,307" sap2010:WorkflowViewState.IdRef="ExchangeApplicationCard_1" UseConnectionService="False">
+    <umab:ExchangeApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" SharedMailbox="{x:Null}" Account="Dragos.Suma@uipath.com" ApplicationId=" bf3d6e62-c3a0-4b77-903d-8d1d657542e4" DisplayName="Use Outlook 365" EmailAddress="Dragos.Suma@uipath.com" sap:VirtualizedContainerService.HintSize="412,307" sap2010:WorkflowViewState.IdRef="ExchangeApplicationCard_1" UseConnectionService="False">
       <umab:ExchangeApplicationCard.Body>
         <ActivityAction x:TypeArguments="um:IMailQuickHandle">
           <ActivityAction.Argument>
@@ -82,11 +82,11 @@
           </Sequence>
         </ActivityAction>
       </umab:ExchangeApplicationCard.Body>
-      <umab:ExchangeApplicationCard.EmailAddress>
+      <umab:ExchangeApplicationCard.TenantId>
         <InArgument x:TypeArguments="x:String">
           <Literal x:TypeArguments="x:String" Value="" />
         </InArgument>
-      </umab:ExchangeApplicationCard.EmailAddress>
+      </umab:ExchangeApplicationCard.TenantId>
     </umab:ExchangeApplicationCard>
   </ueab:SequenceX>
 </Activity>
